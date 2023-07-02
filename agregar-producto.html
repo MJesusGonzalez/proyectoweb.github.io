@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tienda en línea - Agregar Producto</title>
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!--TOASTIFY-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/styleAgregarProducto.css"
+    />
+  </head>
+  <body>
+    <header class="head_nav"></header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="image/icon.png" class="nav_icon" />
+          Tacos el Tommy
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">Comprar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agregar-producto.html"
+                >Agregar Producto</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link logged-out" href="signin.html">Signin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logged-out" href="signup.html">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logged-in" href="index.html" id="logout"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="add-product-section">
+        <h2>Agregar Producto</h2>
+        <form id="add-product-form" class="form">
+          <label for="product-id">Id:</label>
+          <input type="text" id="product-id" required />
+          <label for="product-name">Nombre del producto:</label>
+          <input type="text" id="product-name" required />
+          <label for="product-price">Precio:</label>
+          <input type="number" id="product-price" required />
+          <label for="product-image">URL de la imagen:</label>
+          <input
+            type="text"
+            id="product-image"
+            required
+            placeholder="ejemplo:imagenes/gow.jpg"
+          />
+          <button type="submit">Agregar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link px-2 text-muted">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="info" class="nav-link px-2 text-muted">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">About</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Tacos el Tommy</p>
+    </footer>
+
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--TOASTIFY-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <!--CUSTOM LOGIN LOGOUT-->
+    <script src="app/main.js" type="module"></script>
+    <!--CUSTOM CONTENT-->
+
+    <script src="./app/agregarProducto.js"></script>
+  </body>
+</html>

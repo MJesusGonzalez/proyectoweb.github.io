@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
     <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
     <!--TOASTIFY-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <header class="head_nav">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="image/icon.png" class="nav_icon">
-                        Tacos el Tommy
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="info.html">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link logged-out" href="signin.html">Signin</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link logged-out" href="signup.html">Signup</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link logged-in" href="index.html" id="logout">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <section class="content">
-            <div class="container container_content">
-                <header>
-                    <h1>Agregue al carrito =></h1>
-                    <div class="shopping">
-                        <img src="image/shopping.svg" class="shop_cart">
-                        <span class="quantity">0</span>
-                    </div>
-                </header>
-
-                <div class="list">
-
-                </div>
+      <header class="head_nav">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          data-bs-theme="dark"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="image/icon.png" class="nav_icon" />
+              Tacos el Tommy
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="home.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="carrito.html">Comprar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Agregar Producto</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link logged-out" href="signin.html">Signin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link logged-out" href="signup.html">Signup</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link logged-in" href="index.html" id="logout"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="card">
-                <h1>Carrito de Compras</h1>
-                <ul class="listCard">
-                </ul>
-                <div class="checkOut">
-                    <div class="total">0</div>
-                    <div class="closeShopping">Close</div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </nav>
+      </header>
+      
 
-        <footer >
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                <li class="nav-item"><a href="info" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-            </ul>
-            <p class="text-center text-muted">© 2023 Tacos el Tommy</p>
-        </footer>
+      <footer>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link px-2 text-muted">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="info" class="nav-link px-2 text-muted">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2023 Tacos el Tommy</p>
+      </footer>
     </div>
 
     <!--BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--TOASTIFY-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <!--CUSTOM LOGIN LOGOUT-->
     <script src="app/main.js" type="module"></script>
     <!--CUSTOM CONTENT-->
     <script src="app/app.js"></script>
-</body>
-
+  </body>
 </html>

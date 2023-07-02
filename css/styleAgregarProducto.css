@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #6a329f;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  article {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #add-product-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  #add-product-form label,
+  #add-product-form input,
+  #add-product-form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #6a329f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    list-style: none;
+    columns: 1;
+    
+  }
+  
+  .product-grid li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    columns: 1;
+  }
+  
+  .product-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+  .game-title {
+    justify-content: center;
+  }
+  .video {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
