@@ -35,6 +35,9 @@ body {
 header .shopping img {
     width: 40px;
 }
+.shopping:hover {
+cursor: pointer;
+}
 
 header .shopping span {
     background: red;
