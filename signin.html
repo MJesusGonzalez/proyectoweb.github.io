@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" >
+    <!--TOASTIFY-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <Header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">SignIn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link logged-out" href="signup.html">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <div class="container">
+        <form id="signin-form">
+            <label for="signin-email">Email:</label>
+            <input type="email" id="signin-email" class="form-control" placeholder="Email" required>
+            <label for="signin-password">Password:</label>
+            <input type="password" id="signin-password" class="form-control" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary w-100 mb-4">
+                Login
+            </button>
+        </form>
+
+        <button type="button" id="googleLogin" class="btn">
+            <img src="img/google.svg.png" alt="Google" width="100">
+        </button>
+    </div>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--TOASTIFY-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!--CUSTOM-->
+    <script src="app/signinForm.js" type="module"></script>
+    <script src="app/googleLogin.js" type="module"></script>
+</body>
+
+</html>
