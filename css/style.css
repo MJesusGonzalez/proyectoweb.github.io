@@ -3,6 +3,11 @@
     width: 100%;
     top: 0px;
 }
+.nav_icon {
+    padding-right: 10px;
+    width: 60px;
+    height: auto;
+}
 
 body {
     background-color: #E3E7E8;
