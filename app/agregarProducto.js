@@ -1,6 +1,6 @@
 // Lista de productos
 let productList = JSON.parse(localStorage.getItem('productList')) || [];
-
+let list = document.querySelector('.list');
 // Clase Producto
 class Product {
   constructor(id,name, price, imageSrc) {
@@ -18,28 +18,20 @@ function renderProducts() {
   
   
 
-  productList.forEach(function(product) {
-    const listItem = document.createElement('li');
+  productList.forEach((product, key) =>{
+    const listItem = document.createElement('div');
+    listItem.classList.add('item');
     listItem.innerHTML = `
-      <img src="${product.imageSrc}" alt="${product.name}" />
-      <span>${product.name} - $${product.price}</span>
+      <img src="${product.imageSrc}"> 
+      <div class="title">${product.name}</div>
+      <div class="price">${product.price.toLocaleString()}</div>
+      <button onclick="addToCard(${key})">Add To Card</button>
     `;
-
-    const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = 'Eliminar';
-    deleteButton.addEventListener('click', function() {
-      listItem.remove();
-      deleteProduct(product);
-    });
-
-    listItem.appendChild(deleteButton);
-    productListContainer.appendChild(listItem);
   });
+
+    
   }
   
-}
-function ordenarAsc() {
-  productList.sort();
 }
 
 

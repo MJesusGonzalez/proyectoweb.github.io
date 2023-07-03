@@ -12,6 +12,7 @@ openShopping.addEventListener('click', ()=>{
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
+let productList = JSON.parse(localStorage.getItem('productList')) || [];
 
 let products = [
     {
@@ -51,13 +52,19 @@ let products = [
         price: 120000
     }
 ];
+
+//productList.add(products);
+
+console.log(productList);
+
 let listCards  = [];
 function initApp(){
-    products.forEach((value, key) =>{
+    productList.forEach((value, key) =>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
+        console.log(value);
         newDiv.innerHTML = `
-            <img src="image/${value.image}">
+            <img src="${value.imageSrc}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -68,7 +75,7 @@ initApp();
 function addToCard(key){
     if(listCards[key] == null){
         // copy product form list to list card
-        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key] = JSON.parse(JSON.stringify(productList[key]));
         listCards[key].quantity = 1;
     }
     reloadCard();
@@ -83,7 +90,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="image/${value.image}"/></div>
+                <div><img src="${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
@@ -102,7 +109,7 @@ function changeQuantity(key, quantity){
         delete listCards[key];
     }else{
         listCards[key].quantity = quantity;
-        listCards[key].price = quantity * products[key].price;
+        listCards[key].price = quantity * productList[key].price;
     }
     reloadCard();
 }
