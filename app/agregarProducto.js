@@ -47,6 +47,7 @@ function deleteProduct(key) {
   }
   localStorage.setItem("productList", JSON.stringify(productList));
   console.log(productList)
+  location.reload();
 }
 
 // Agregar dos productos iniciales
@@ -71,6 +72,7 @@ if (addProductForm) {
     console.log(productList);
 
     addProductForm.reset();
+    location.reload();
   });
 }
 
