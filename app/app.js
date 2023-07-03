@@ -66,7 +66,7 @@ function initApp(){
         newDiv.innerHTML = `
             <img src="${value.imageSrc}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
+            <div class="price">${parseInt(value.price.toLocaleString())}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
         list.appendChild(newDiv);
     })
@@ -85,12 +85,12 @@ function reloadCard(){
     let count = 0;
     let totalPrice = 0;
     listCards.forEach((value, key)=>{
-        totalPrice = totalPrice + value.price;
+        totalPrice = totalPrice + parseInt(value.price);
         count = count + value.quantity;
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="${value.image}"/></div>
+                <div><img src="${value.imageSrc}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
