@@ -37,12 +37,16 @@ function addProduct(id, name, price, imageSrc) {
 }
 
 // Función para eliminar un producto
-function deleteProduct(product) {
-  const index = productList.indexOf(product);
+function deleteProduct(key) {
+  console.log(key);
+  
+  const index = productList.indexOf(productList[key]);
+  console.log(index);
   if (index !== -1) {
     productList.splice(index, 1);
   }
   localStorage.setItem("productList", JSON.stringify(productList));
+  console.log(productList)
 }
 
 // Agregar dos productos iniciales

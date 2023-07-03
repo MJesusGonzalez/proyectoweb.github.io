@@ -49,6 +49,14 @@ body {
   #add-product-section {
     background-color: #f2f2f2;
     padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  #delete-products{
+    background-color: #f2f2f2;
+    padding: 20px;
   }
   
   #add-product-form label,
@@ -92,4 +100,7 @@ body {
     align-items: center;
     text-align: center;
   }
-  
+  div img{
+    width: 100px;
+    height: 150px;
+  }
