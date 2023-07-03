@@ -8,11 +8,9 @@ import { showMessage } from './showMessage.js'
 import './logout.js'
 onAuthStateChanged(auth, async (user) => {
     if ( user ) {
-        console.log(user)
-        showMessage("Bienvenido: " + user.email, 'success');
+        //showMessage("Bienvenido: " + user.email, 'success');
         loginCheck(user)
     } else {
         loginCheck(user)
     }
-    
 })

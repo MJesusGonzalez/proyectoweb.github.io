@@ -1,8 +1,10 @@
-.wrapper .head_nav {
-    position: fixed;
+.head_nav {
     width: 100%;
+    position: fixed;
+    z-index: 100;
     top: 0px;
 }
+
 .nav_icon {
     padding-right: 10px;
     width: 60px;
@@ -11,7 +13,9 @@
 
 body {
     background-color: #E3E7E8;
-    font-family: system-ui;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container_content header {
@@ -40,8 +44,9 @@ body {
 header .shopping img {
     width: 40px;
 }
+
 .shopping:hover {
-cursor: pointer;
+    cursor: pointer;
 }
 
 header .shopping span {
@@ -170,7 +175,6 @@ header .shopping span {
 .listCard .count {
     margin: 0 10px;
 }
-
 
 footer {
     margin-top: 100px;
